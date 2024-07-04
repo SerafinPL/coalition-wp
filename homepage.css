@@ -4,15 +4,41 @@
 --------------------------------------------------------------*/
 /* made by Jack the Coder | MIT License | jackthecoder.dev */
 
-/* Header Up Bar **/
+
  
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
+:root {
+
+    --homepage-color-main: #ff6200;
+    --homepage-color-text: #be3600;
+    --homepage-white-text: #ffffff;
+  }
+
+/* Hompage view max width */
+
+  .homepage-view{
+    max-width: 980px;  /* Project*/
+    margin: 0 auto; 
+    width: 100%;
+	height: 100%;
+
+  }
+
+  /* Header Up Bar **/
 
  .homepage-up-bar{
-	background-color: coral;
+	background-color:var(--homepage-color-main);
+    color: var(--homepage-color-text);
 	width: 100%;
-	height: 50px;
+	height: 34px;
+ }
+
+ .homepage-up-bar-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .white-text{
+    color: var(--homepage-white-text);
+
  }
