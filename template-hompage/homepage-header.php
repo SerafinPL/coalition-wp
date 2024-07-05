@@ -67,8 +67,14 @@
 						</nav><!-- #site-navigation -->
 					</div>
 				</div>
-				<?php
 
+				<?php
+				if (function_exists('yoast_breadcrumb')) {
+					yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
+				}
+				?>
+
+				<?php
 				$ct_custom_description = get_bloginfo('description', 'display');
 				if ($ct_custom_description || is_customize_preview()):
 					?>
