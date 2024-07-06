@@ -130,6 +130,8 @@ function ct_custom_scripts()
 
 	wp_enqueue_style('ct-custom-homepage', get_template_directory_uri() . '/homepage.css');
 
+	wp_enqueue_style('ct-custom-fonts', get_template_directory_uri() . '/fonts.css');
+
 	wp_enqueue_script('ct-custom-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true);
 
 	wp_enqueue_script('ct-custom-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true);

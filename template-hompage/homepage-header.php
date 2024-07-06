@@ -13,6 +13,9 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<!--- Linking web Fonts--->
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/buw6mth.css">
 
 	<?php wp_head(); ?>
 </head>
@@ -23,7 +26,7 @@
 
 		<header id="masthead" class="site-header">
 			<div class="site-branding">
-				<div class="homepage-up-bar">
+				<div class="homepage-up-bar orange-text ">
 					<div class="homepage-view homepage-up-bar-flex">
 						<div>
 							<span>CALL US NOW! </span>
@@ -38,8 +41,8 @@
 				</div>
 
 
-				<div class="homepage-view ">
-					<div>
+				<div class="homepage-view homepage-middle-bar-flex">
+					<div class="homepage-middle-bar-element">
 						<?php
 						if (function_exists('the_custom_logo') && has_custom_logo()):
 							the_custom_logo(); ?>
@@ -47,12 +50,12 @@
 							<?php
 						else:
 							?>
-							<p class="site-title"> YOUR LOGO</p>
+							<p class="homepage-logo-title bebas-neue-font">YOUR <span class="orange-text">LOGO</span></p>
 							<?php
 						endif;
 						?>
 					</div>
-					<div>
+					<div class="homepage-middle-bar-element">
 						<nav id="site-navigation" class="main-navigation">
 							<button class="menu-toggle" aria-controls="primary-menu"
 								aria-expanded="false"><?php esc_html_e('Primary Menu', 'ct-custom'); ?></button>
