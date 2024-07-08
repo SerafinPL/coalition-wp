@@ -42,7 +42,7 @@
 
 
 				<div class="homepage-view homepage-middle-bar-flex">
-					<div class="homepage-middle-bar-element">
+					<div class="homepage-middle-bar-element homepage-middle-bar-logo">
 						<?php
 						if (function_exists('the_custom_logo') && has_custom_logo()):
 							the_custom_logo(); ?>
@@ -54,9 +54,9 @@
 							<?php
 						endif;
 						?>
-					</div>
-					<div class="homepage-middle-bar-element">
-						<nav id="site-navigation" class="main-navigation">
+					</div> 
+					<div class="homepage-middle-bar-element homepage-middle-bar-nav">
+						<nav id="site-navigation" class="main-navigation myriad-pro-font height-full">
 							<button class="menu-toggle" aria-controls="primary-menu"
 								aria-expanded="false"><?php esc_html_e('Primary Menu', 'ct-custom'); ?></button>
 							<?php

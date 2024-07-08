@@ -41,12 +41,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 150px;
+
 }
 
 .homepage-middle-bar-element{
   width: 50%;
   height: 100%;
   text-align: left;
+}
+
+.homepage-middle-bar-nav {
+  width: 75%;
+}
+
+.homepage-middle-bar-logo {
+  width: 25%;
 }
 
 .orange-text {
@@ -59,4 +69,55 @@
 /* Logo Cover*/
 .homepage-logo-title{
   font-size: 41px;
+}
+
+/* Menu  section */
+
+.homepage-view ul.menu.nav-menu {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  
+}
+
+.height-full{
+  height: 100%;
+
+} 
+
+.menu-menu-1-container {
+  height: 100%;
+  width: 100%;
+  
+}
+.menu-menu-1-container ul{
+  height: 34px;
+  width: 100%;
+
+}
+
+.homepage-view ul.menu.nav-menu li.menu-item{
+  width: 43px;
+  text-align: center;
+  font-size: 13px;
+  
+
+}
+
+.homepage-view ul.menu.nav-menu li.menu-item a{
+
+  color: #333 !important;
+  text-decoration: none;
+
+}
+
+
+.homepage-view ul.menu.nav-menu li.menu-item:hover{
+
+  text-align: center;
+  border-bottom: 4px solid var(--homepage-color-main);
+
 }
