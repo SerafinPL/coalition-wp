@@ -51,14 +51,14 @@
   text-align: left;
 }
 
-.homepage-middle-bar-nav {
+/*.homepage-middle-bar-nav {
   width: 75%;
 }
 
 .homepage-middle-bar-logo {
   width: 25%;
 }
-
+*/
 .orange-text {
   color: var(--homepage-color-text);
 }
@@ -103,7 +103,7 @@
   width: 43px;
   text-align: center;
   font-size: 13px;
-  
+  border-bottom: 4px solid #ffffff;
 
 }
 
@@ -115,9 +115,32 @@
 }
 
 
-.homepage-view ul.menu.nav-menu li.menu-item:hover{
+.homepage-view ul.menu.nav-menu > li.menu-item:hover{
 
-  text-align: center;
   border-bottom: 4px solid var(--homepage-color-main);
 
+}
+
+
+.homepage-view ul.menu.nav-menu ul.sub-menu{
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 8px 14px 8px 14px ;
+  
+  
+}
+
+.homepage-view ul.menu.nav-menu ul.sub-menu li.menu-item,
+.homepage-view ul.menu.nav-menu ul.sub-menu li.menu-item a{
+  width: 100%;
+  text-align: center;
+}
+
+
+.homepage-view ul.menu.nav-menu ul.sub-menu ul.sub-menu{
+  margin-left: 15px;
 }
