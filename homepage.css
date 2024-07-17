@@ -144,3 +144,8 @@
 .homepage-view ul.menu.nav-menu ul.sub-menu ul.sub-menu{
   margin-left: 15px;
 }
+
+
+.wp-block-social-link{
+  border-radius: 0px !important;
+}
