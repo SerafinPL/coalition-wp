@@ -12,6 +12,11 @@
   --homepage-white-text: #ffffff;
 }
 
+
+.color-orange{
+
+}
+
 /* Hompage view max width */
 
 .homepage-view {
@@ -148,4 +153,21 @@
 
 .wp-block-social-link{
   border-radius: 0px !important;
+}
+
+.site-homepage .entry-header{
+  font-size:26.81px ;
+  color: var(--homepage-color-main);
+
+
+}
+
+.homepage-content-title{
+  font-size:26.81px ;
+ color: var(--homepage-color-main);
+}
+
+
+.contact-grid{
+  
 }

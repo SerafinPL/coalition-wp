@@ -2,7 +2,7 @@
 
 <?php get_template_part('template-hompage/homepage', 'header'); ?>
 <div id="primary" class="content-area homepage-view ">
-	<main id="main" class="site-main">
+	<main id="main" class="site-main site-homepage">
 
 		<?php
 		while (have_posts()):
