@@ -11,10 +11,11 @@
   --homepage-color-text: #be3600;
   --homepage-white-text: #ffffff;
   --homepage-grey-border: #434343;
+  --homepage-input-font-color: #878787;
+  --homepage-input-background: #f6f6f6;
+  --homepage-input-border: 1px solid rgba(0, 0, 0, 0.07):
 }
 
-
-.color-orange {}
 
 /* Hompage view max width */
 
@@ -67,6 +68,19 @@
 
 .homepage-logo-title {
   font-size: 41px;
+}
+
+/* Breadcrumps */
+
+#breadcrumbs {
+  margin: 0;
+}
+
+#breadcrumbs a,
+#breadcrumbs a:active,
+#breadcrumbs a:visited {
+  color: #929292;
+  text-decoration: none;
 }
 
 /* Menu  section */
@@ -150,45 +164,127 @@
 
 /* Main Content Header*/
 
-.site-homepage .entry-header {
+.site-homepage h1.entry-title {
   font-size: 27px;
+  line-height: 19px;
   color: var(--homepage-color-main);
+  margin: 43px 0px 0px 0px;
+  font-family: "Open Sans";
+  font-weight: 700px;
+}
+
+.site-homepage div.entry-content {
+  margin: 0px 0px 58px 0px;
 }
 
 .homepage-content-title {
+  margin-top: 0px;
   font-size: 23px;
+  line-height: 25px;
   color: var(--homepage-color-main);
   border-bottom: 6px solid var(--homepage-grey-border);
+  font-weight: 400;
+  font-family: "Open Sans";
 }
 
-.max-w-825{
+.max-w-825 {
   max-width: 825px;
+}
+
+.mb-58 {
+  margin-bottom: 58px;
 }
 
 /* Main Content Left for Form*/
 
-.max-w-470 { 
+.wpcf7-form p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.max-w-470 {
   max-width: 470px;
 }
 
-.homepage-form-name{
 
+/* Main Content Form Inputs*/
+
+.homepage-form-design-name {
+  width: 100%;
+  max-width: 470px;
+  margin: 0px;
+  height: 32px;
+  background-color: var(--homepage-input-background);
+  border: var(--homepage-input-border);
+  border-radius: 0px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 25px;
+  color: var(--homepage-input-font-color);
+  font-weight: 300;
+  font-family: "Ubuntu";
 }
 
-.homepage-form-phone{
-  
+.homepage-form-design-phone {
+  width: 49%;
+  margin: 10px 1% 10px 0;
+  float: left;
+  height: 32px;
+  background-color: var(--homepage-input-background);
+  border: var(--homepage-input-border);
+  border-radius: 0px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 25px;
+  color: var(--homepage-input-font-color);
+  font-weight: 300;
+  font-family: "Ubuntu";
 }
 
-.homepage-form-email{
-  
+.homepage-form-design-email {
+  width: 48%;
+  margin: 10px 1%;
+  float: left;
+  height: 32px;
+  background-color: var(--homepage-input-background);
+  border: var(--homepage-input-border);
+  border-radius: 0px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 25px;
+  color: var(--homepage-input-font-color);
+  font-weight: 300;
+  font-family: "Ubuntu";
 }
 
-.homepage-form-message{
-  
+.homepage-form-design-message {
+  width: 100%;
+  max-width: 470px;
+  margin: 0px;
+  height: 110px;
+  background-color: var(--homepage-input-background);
+  border: var(--homepage-input-border);
+  border-radius: 0px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 25px;
+  color: var(--homepage-input-font-color);
+  font-weight: 300;
+  font-family: "Ubuntu";
+  overflow-y: auto;
 }
 
-.homepage-form-submit{
-  
+
+.homepage-form-submit {
+  width: 98px;
+  height: 37px;
+  margin-top: 20px;
+  background-color: #ff6200 !important;
+  color: #fff !important;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Open Sans";
 }
 
 
@@ -203,6 +299,7 @@
   padding-top: 18px;
   font-size: 16px;
   max-width: 470px;
+  margin-top: 0px;
 }
 
 
@@ -210,4 +307,5 @@
 
 .wp-block-social-link {
   border-radius: 0px !important;
+  filter: grayscale(100%);
 }
