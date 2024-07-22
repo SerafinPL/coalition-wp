@@ -145,14 +145,10 @@
 }
 
 
-/* Socials menu*/
-
-.wp-block-social-link {
-  border-radius: 0px !important;
-}
 
 
-/* Main Content*/
+
+/* Main Content Header*/
 
 .site-homepage .entry-header {
   font-size: 27px;
@@ -163,7 +159,44 @@
   font-size: 23px;
   color: var(--homepage-color-main);
   border-bottom: 6px solid var(--homepage-grey-border);
+}
+
+.max-w-825{
+  max-width: 825px;
+}
+
+/* Main Content Left for Form*/
+
+.max-w-470 { 
   max-width: 470px;
+}
+
+.homepage-form-name{
+
+}
+
+.homepage-form-phone{
+  
+}
+
+.homepage-form-email{
+  
+}
+
+.homepage-form-message{
+  
+}
+
+.homepage-form-submit{
+  
+}
+
+
+/* Main Content Right for Address */
+
+.homepage-content-right {
+  margin-left: 75px;
+  max-width: 407px;
 }
 
 .homepage-content-address {
@@ -173,6 +206,8 @@
 }
 
 
-.contact-grid {
+/* Main Content Right for Socials menu*/
 
+.wp-block-social-link {
+  border-radius: 0px !important;
 }
