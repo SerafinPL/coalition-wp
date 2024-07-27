@@ -21,4 +21,4 @@
 	</main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_template_part('template-hompage/empty-footer', 'footer'); ?>
+<?php get_template_part('template-homepage/homepage-footer', 'footer'); ?>
