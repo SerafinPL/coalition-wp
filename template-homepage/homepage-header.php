@@ -32,12 +32,12 @@
 				<div class="homepage-up-bar orange-text ">
 					<div class="homepage-view homepage-up-bar-flex">
 						<div>
-							<span>CALL US NOW! </span>
-							<span class="white-text">385.154.11.28.3</span>
+							<span class="bebas-neue-font">CALL US NOW!&nbsp;&nbsp;&nbsp; </span>
+							<span class="white-text bebas-neue-font">385.154.11.28.3</span>
 						</div>
 						<div>
-							<span>LOGIN </span>
-							<span class="white-text"> SIGNUP</span>
+							<span class="bebas-neue-font">LOGIN&nbsp;&nbsp;&nbsp; </span>
+							<span class="white-text bebas-neue-font"> SIGNUP</span>
 						</div>
 					</div>
 
