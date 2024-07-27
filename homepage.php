@@ -1,6 +1,6 @@
 <?php /* Template Name: Example Template */ ?>
 
-<?php get_template_part('template-hompage/homepage', 'header'); ?>
+<?php get_template_part('template-homepage/homepage', 'header'); ?>
 <div id="primary" class="content-area homepage-view ">
 	<main id="main" class="site-main site-homepage">
 

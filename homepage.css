@@ -147,12 +147,13 @@
   justify-content: center;
   height: auto;
   padding: 8px 14px 8px 14px;
-  left: -27px;
-
 }
 
-.homepage-view ul.menu.nav-menu ul.sub-menu ul.sub-menu{
+.homepage-view ul.menu.nav-menu:hover > li > ul.sub-menu {
+  left: -27px;
+}
 
+.homepage-view ul.menu.nav-menu ul.sub-menu:hover ul.sub-menu{
   left: 72px;
 }
 
