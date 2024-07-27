@@ -77,11 +77,11 @@
 				</div>
 				<div class="homepage-view ">
 
-					<?php
-					if (function_exists('yoast_breadcrumb')) {
-						yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
-					}
-					?>
+					<p id="breadcrumbs">
+						<span> <span> <a href="http://localhost/">Home</a></span> / <span>
+								<a href="http://localhost/index.php/home/who-we-are/">Who we are</a></span> /
+							<span class="breadcrumb_last" aria-current="page"><strong>Contact</strong></span></span>
+					</p>
 				</div>
 			</div>
 
