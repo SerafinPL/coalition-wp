@@ -151,11 +151,11 @@
   padding: 8px 14px 8px 14px;
 }
 
-.homepage-view ul.menu.nav-menu:hover > li > ul.sub-menu {
+.homepage-view ul.menu.nav-menu > li.menu-item-has-children:hover  > ul.sub-menu {
   left: -27px;
 }
 
-.homepage-view ul.menu.nav-menu ul.sub-menu:hover ul.sub-menu{
+.homepage-view ul.menu.nav-menu ul.sub-menu > li.menu-item-has-children:hover ul.sub-menu{
   left: 72px;
 }
 
@@ -325,7 +325,6 @@
 
 /* Main Content Right for Socials menu*/
 
-.wp-block-social-link {
-  border-radius: 0px !important;
-  filter: grayscale(100%);
+.homepage-social-link {
+  text-decoration: none;
 }
