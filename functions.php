@@ -81,6 +81,9 @@ if (!function_exists('ct_custom_setup')):
 			'flex-width' => true,
 			'flex-height' => true,
 		));
+
+
+
 	}
 endif;
 add_action('after_setup_theme', 'ct_custom_setup');
@@ -141,6 +144,139 @@ function ct_custom_scripts()
 	}
 }
 add_action('wp_enqueue_scripts', 'ct_custom_scripts');
+
+
+
+/*CUSTOM theme options
+
+
+
+function my_theme_options_page() {
+    ?>
+
+    <div class="wrap">
+    <h1>Special Theme Options</h1>
+    <form method="post" action="options.php">
+        <?php
+            settings_fields('my-theme-settings-group');
+            do_settings_sections('my-theme-settings-group');
+            submit_button();
+        ?>
+    </form>
+    </div>
+    <?php
+}
+
+
+
+
+function my_setting_callback() {
+    $setting = esc_attr(get_option('my-setting'));
+    echo "<input type='text' name='my-setting' value='$setting' />";
+}
+
+function my_theme_settings() {
+	add_settings_field('my-setting', 'My Setting', 'my_setting_callback', 'my-theme-options', 'my-theme-settings-group');
+    register_setting('my-theme-settings-group', 'my-setting');
+	
+}
+
+
+
+
+add_action('admin_init', 'my_theme_settings');
+
+
+function my_theme_menu() {
+    add_theme_page('Theme Options', 'Theme Options', 'edit_theme_options', 'my-theme-options', 'my_theme_options_page');
+}
+
+add_action('admin_menu', 'my_theme_menu');
+
+/*
+add_settings_field('my-setting', 'My Setting', 'my_setting_callback', 'my-theme-options', 'my-theme-settings-group');
+
+function my_setting_callback() {
+    $setting = esc_attr(get_option('my-setting'));
+    echo "<input type='text' name='my-setting' value='$setting' />";
+}
+
+*/
+
+
+function build_options_page() { ?>
+<div id="theme-options-wrap">
+	<div class="icon32" id="icon-tools"> <br /> </div>
+	<h1>Special Theme Settings</h1>
+	<form method="post" action="options.php" enctype="multipart/form-data">
+		<?php settings_fields('theme_options'); ?>
+		<?php do_settings_sections(__FILE__); ?>
+		<p class="submit">
+			<input name="Submit" type="submit" class="button-primary" value="<?php esc_attr_e('Save Settings'); ?>" />
+		</p>
+	</form>
+</div>
+<?php }
+add_action('admin_init', 'register_and_build_fields');
+function register_and_build_fields() {
+	register_setting('theme_options', 'theme_options', 'validate_setting');
+	add_settings_section('address_settings', 'Address Settings', 'section_address', __FILE__);
+
+	add_settings_section('social_settings', 'Social Links Settings', 'section_social', __FILE__);
+
+	function section_address() {}
+	function section_social() {}
+	add_settings_field('address_text1', 'Address Text 1', 'address_text_setting1', __FILE__, 'address_settings');
+	add_settings_field('address_text2', 'Address Text 2', 'address_text_setting2', __FILE__, 'address_settings');
+
+	add_settings_field('phone_number', 'Phone Number', 'phone_number_setting', __FILE__, 'address_settings');
+	add_settings_field('fax_number', 'Fax Number', 'fax_number_setting', __FILE__, 'address_settings');
+
+
+	add_settings_field('facebookurl', 'Facebook URL', 'facebookurl', __FILE__, 'social_settings');
+	add_settings_field('twitterurl', 'Twitter URL', 'twitterurl', __FILE__, 'social_settings');
+	add_settings_field('linkedinurl', 'Linkedin URL', 'linkedinurl', __FILE__, 'social_settings');
+	add_settings_field('pinteresturl', 'Pinterest URL', 'pinteresturl', __FILE__, 'social_settings');
+}
+function validate_setting($theme_options) {
+	return $theme_options;
+}
+function address_text_setting1() {
+	$options = get_option('theme_options');  echo "<input name='theme_options[address_text_setting1]' type='text' value='{$options['address_text_setting1']}' />";
+}
+
+function address_text_setting2() {
+	$options = get_option('theme_options');  echo "<input name='theme_options[address_text_setting2]' type='text' value='{$options['address_text_setting2']}' />";
+}
+
+function phone_number_setting() {
+	$options = get_option('theme_options');  echo "<input name='theme_options[phone_number_setting]' type='text' value='{$options['phone_number_setting']}' />";
+}
+function fax_number_setting() {
+	$options = get_option('theme_options');  echo "<input name='theme_options[fax_number_setting]' type='text' value='{$options['fax_number_setting']}' />";
+}
+
+function facebookurl() {
+	$options = get_option('theme_options');  echo "<input name='theme_options[facebookurl]' type='url' value='{$options['facebookurl']}' />";
+}
+
+function twitterurl() {
+	$options = get_option('theme_options');  echo "<input name='theme_options[twitterurl]' type='url' value='{$options['twitterurl']}' />";
+}
+
+function linkedinurl() {
+	$options = get_option('theme_options');  echo "<input name='theme_options[linkedinurl]' type='url' value='{$options['linkedinurl']}' />";
+}
+
+function pinteresturl() {
+	$options = get_option('theme_options');  echo "<input name='theme_options[pinteresturl]' type='url' value='{$options['pinteresturl']}' />";
+}
+
+
+add_action('admin_menu', 'theme_options_page');
+function theme_options_page() {  add_theme_page('Theme Settings', 'Special Theme Settings', 'administrator', __FILE__, 'build_options_page');}
+
+
 
 /**
  * Implement the Custom Header feature.
