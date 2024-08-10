@@ -214,7 +214,7 @@
 
 .wpcf7-form p {
   margin: 0px;
-  padding: 18px 0px 0px;
+  padding: 0px;
 }
 
 .max-w-470 {
@@ -223,6 +223,10 @@
 
 
 /* Main Content Form Inputs*/
+
+form.wpcf7-form {
+  padding-top: 18px;
+}
 
 .homepage-form-design-name {
   width: 100%;
@@ -312,7 +316,7 @@
 
 .homepage-content-address {
   padding-top: 12px;
-  padding-bottom: 58px;
+  padding-bottom: 22px;
   font-size: 14px;
   max-width: 470px;
   margin-top: 0px;
